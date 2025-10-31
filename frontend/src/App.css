@@ -1,0 +1,34 @@
+/* Add these styles to your existing App.css */
+
+/* Smooth transitions for page changes */
+.editor-area {
+  transition: opacity 0.3s ease;
+}
+
+/* Loading states */
+.loading {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/* Route transition animations */
+.route-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.route-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.route-exit {
+  opacity: 1;
+}
+
+.route-exit-active {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.3s, transform 0.3s;
+}
